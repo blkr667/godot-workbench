@@ -1,0 +1,107 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://stone-tileset.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16, 16 )
+
+[node name="Tiles" type="Node2D"]
+
+[node name="Wall1" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 8
+frame = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall1"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wall2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 8
+frame = 2
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall2"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wall3" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 8
+frame = 9
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall3"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall3/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wall4" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 8
+frame = 10
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall4"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall4/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Wall5" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 8
+frame = 17
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Wall5"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall5/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Bg1" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 8
+
+[node name="Bg2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 8
+frame = 5
+
+[node name="Bg3" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 8
+frame = 8
+
+[node name="Bg4" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 8
+frame = 16
+
+[node name="Bg5" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 1 )
+hframes = 8
+vframes = 8
+frame = 21

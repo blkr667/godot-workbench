@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://tscn/AiHumanoid.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/units/humanoid/RecruitHumanoid.gd" type="Script" id=2]
+
+[node name="RecruitHumanoid" instance=ExtResource( 1 )]
+collision_layer = 2
+collision_mask = 17
+script = ExtResource( 2 )
